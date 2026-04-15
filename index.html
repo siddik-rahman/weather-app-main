@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Weather app</title>
+
+<!-- <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@700&family=DM+Sans:opsz@300;500;600;700&display=swap" rel="stylesheet"> -->
+ <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700&family=DM+Sans:wght@300;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 0.6875rem; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="main-container">
+    <!-- Starts header -->
+    <header>
+      <div class="logo-units">
+        <div class="logo">
+        <img src="/assets/images/logo.svg" alt="logo">
+       
+      </div>
+      <div class="units">
+        <img src="/assets/images/icon-units.svg" alt="">
+        <span class="unit">Units</span>
+        <img src="/assets/images/icon-dropdown.svg" alt="">
+      </div>
+      </div>
+      
+      <h1>How's the sky looking today?</h1>
+    </header>
+
+    <!-- Ends header -->
+
+     <div class="search">
+      <div class="input-box">
+       <img src="/assets/images/icon-search.svg" alt="search icon">
+      <input type="text" id="inputText" placeholder="Search for a place...">
+      </div>
+       <button class="searchBtn">Search</button>
+     </div>
+     <div class="container">
+      <!-- left side -->
+      <div class="left">
+        <!-- Row 1 -->
+         <div class="top-card">
+          <div>
+            <h2>Berlin, Germany</h2>
+           <p>Tuesday, August 5, 2025</p>
+          </div>
+          <img class="sunny-icon" src="/assets/images/icon-sunny.webp" alt="sun icon" width="70px" height="70px">
+          <h1>68°</h1>
+
+         </div>
+         <!-- Row 2 -->
+         
+          <div class="info-boxes">
+            <div class="box">
+              <span class="label">Feel Like</span>
+              <span class="feel-like">64°</span>
+            </div>
+            <div class="box">
+              <span class="label">Humidity</span>
+              <span class="humidity">46%</span>
+            </div>
+            <div class="box">
+              <span class="label">Wind</span>
+              <span class="wind">9 mph</span>
+            </div>
+            <div class="box">
+              <span class="label">Precipitation</span>
+              <span class="precipitation">0 in</span>
+            </div>
+            
+          </div>
+          <!-- Row 3 -->
+          <h2>Daily forecast</h2>
+           <div class="daily">
+            <div class="day">
+              <span class="day-name">Tue</span>
+              <img src="/assets/images/icon-rain.webp" alt="">
+              <div class="temp">
+                <span class="high">68°</span>
+                <span class="low">57°</span>
+              </div>
+            </div>
+            <div class="day">
+              <span class="day-name">Wed</span>
+              <img src="/assets/images/icon-rain.webp" alt="">
+              <div class="temp">
+                <span class="high">70°</span>
+                <span class="low">59°</span>
+              </div>
+            </div>
+
+            <div class="day">
+              <span class="day-name">Thu</span>
+              <img src="/assets/images/icon-sunny.webp" alt="">
+              <div class="temp">
+                <span class="high">75°</span>
+                <span class="low">57°</span>
+              </div>
+            </div>
+
+            <div class="day">
+              <span class="day-name">Fri</span>
+              <img src="/assets/images/icon-partly-cloudy.webp" alt="">
+              <div class="temp">
+                <span class="high">77°</span>
+                <span class="low">55°</span>
+              </div>
+            </div>
+            <div class="day">
+              <span class="day-name">Sat</span>
+              <img src="/assets/images/icon-partly-cloudy.webp" alt="">
+              <div class="temp">
+                <span class="high">70°</span>
+                <span class="low">59°</span>
+              </div>
+            </div>
+            <div class="day">
+              <span class="day-name">Sun</span>
+              <img src="/assets/images/icon-snow.webp" alt="">
+              <div class="temp">
+                <span class="high">77°</span>
+                <span class="low">61°</span>
+              </div>
+            </div>
+            <div class="day">
+              <span class="day-name">Mon</span>
+              <img src="/assets/images/icon-fog.webp" alt="">
+              <div class="temp">
+                <span class="high">75°</span>
+                <span class="low">59°</span>
+              </div>
+            </div>
+           
+           </div>
+
+      </div>
+      <!-- Right side -->
+       <div class="forecast-card">
+
+        <div class="heading">
+          <h2>Hourly forecast</h2>
+          <div class="drop-down">
+            <span class="day_name">Tuesday</span>
+           <span><img src="/assets/images/icon-dropdown.svg" alt=""></span> 
+          </div>
+        </div>
+
+        <div class="hourly">
+          <div class="hour">
+            <span><img src="/assets/images/icon-overcast.webp" alt="">3 AM</span> <span class="hour-temp">68°</span>
+          </div>
+          <div class="hour">
+            <span><img src="/assets/images/icon-partly-cloudy.webp" alt="">4 AM</span><span class="hour-temp">68°</span>
+           
+          </div>
+          <div class="hour">
+            <span><img src="/assets/images/icon-sunny.webp" alt="">5 AM</span><span class="hour-temp">68°</span>
+          
+          </div>
+          <div class="hour">
+            <span><img src="/assets/images/icon-overcast.webp" alt="">6 AM</span><span class="hour-temp">68°</span>
+            
+          </div>
+          <div class="hour">
+            <span><img src="/assets/images/icon-snow.webp" alt="">7 AM</span><span class="hour-temp">66°</span>
+        
+          
+          </div>
+          <div class="hour">
+            <span><img src="/assets/images/icon-fog.webp" alt="">8 AM</span><span class="hour-temp">64°</span>
+            
+          </div>
+          <div class="hour">
+            <span><img src="/assets/images/icon-snow.webp" alt="">9 AM</span><span class="hour-temp">63°</span>
+            
+          </div>
+           
+          <div class="hour">
+            <span><img src="/assets/images/icon-overcast.webp" alt="">10 AM</span><span class="hour-temp">63°</span>
+          
+          
+        </div>
+       </div>
+     </div>
+  </main>
+
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/siddik-rahman">Siddik Rahman</a>.
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
