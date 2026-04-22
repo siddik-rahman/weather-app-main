@@ -125,7 +125,7 @@ header .logo-units .units img {
 .container .top-card {
     background-image:url(assets/images/bg-today-large.svg);
     background-size:cover;
-    padding:60px 20px 60px 20px;
+    padding:70px 20px 70px 20px;
     border-radius:10px;
     display:flex;
     justify-content:space-between;
